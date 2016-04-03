@@ -73,12 +73,9 @@ img:hover {
 
 /*for about us*/
 .aboutus {
+	height: 50px;
 	position: relative;
-	background-size: cover;
-	margin-bottom: 0px;
-}
-.bareaster img {
-	max-width:100%;
+	padding-left: 50px;
 }
 .aboutus h3 {
 	font-size: 50px;
@@ -86,22 +83,47 @@ img:hover {
 	padding-left: 20%;
 	color: black;
 }
+.aboutus p{
+	font-size: 15px;
+	padding-bottom: 0px;
+	padding-left: 20%;
+	color: #808080;
+	margin-bottom: 10px;
+}
+.bareaster img {
+	max-width:100%;
+	border-style: solid;
+	border-width: 8px;
+	border-color: #C0C0C0;
+}
 
 .bareaster {
 	position: relative;
-	background-size: cover;
 	height: 625px;
 	margin-bottom: 0px;
 }
 
-.bareaster img {
+.whereMeet h4{
+	font-size: 40px bold;
 	padding-bottom: 0px;
-	margin: auto;
+	padding-left: 5%;
+	color: black;
+}
+
+
+
+#googleMap {
+	height: 300px;
+	padding-left: 40%;
+	padding-right: 40%;
+	float: center;
+	margin: 10px;
 	border-style: solid;
 	border-width: 8px;
 	text-align: center;
 	border-color: #C0C0C0;
 }
+
 /*for gallery*/
 .thumbnail p{
 	font-size: 15px;
@@ -131,7 +153,7 @@ img:hover {
 }
 
 .verse p{
-
+	display: block;
 	width: 500px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -139,6 +161,7 @@ img:hover {
 	border-style: solid;
 	border-width: 8px;
 	text-align: center;
+	text-decoration: none;
 	border-color: #C0C0C0;
 }
 
@@ -149,8 +172,36 @@ img:hover {
 	display: inline;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1024px) {
-	body {
-		background-color: yellow;
+@media only screen and (max-width: 480px) {
+	.nav a{
+		font-size: 60%;
+	}
+	.nameFade h1 {
+		font-size: 50px;
+		padding-left: 8%;
+		padding-top: 20%;
+	}
+	.nameFade h2 {
+		padding-left: 8px;
+	}
+	.jumbotron {
+		background: url("thebarmain.jpg") 70% 100%;
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.nav a{
+		font-size: 70%;
+	}
+	.nameFade h1{
+		font-size: 60px;
+		padding-left: 10%;
+	}
+	.nameFade h2{
+		padding-left: 10%;
+	}
+	.jumbotron{
+		background: url("thebarmain.jpg") 65% 100%;
 	}
 }

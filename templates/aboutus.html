@@ -8,6 +8,30 @@
 	<link rel="stylesheet" type="text/css" href="static/portfolio.css"/>
 <script src="js/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+//javascript for maps
+var myCenter=new google.maps.LatLng(42.277406, -83.732550);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 </head>
 <body>
 	<div class = "header">
@@ -20,22 +44,31 @@
 	</div>
 	<div class = "main">
 		<div class = "aboutus">
-			<div class="col-sm-6 col-md-5">
+			<div class="col-sm-12 col-md-6">
 				<h3>Hi! Welcome to The BAR ! </h3>
 					<p>We are a lifegroup within the community of Harvest Mission Community Church. The BAR is an acronym for The Broken And Redeemed. We believe that our life group should represent a casual, yet open environment akin to a bar. Various people go to a bar. Some might be celebration an achievement, others might be going to drink off a harsh setback. We advocate people to come as they are no matter what season of life they are in.</p>
  	 		</div>
-		</div>
-		<div class = "bareaster">
-			<div class="col-sm-6 col-md-5">
-				<img src="static/bareaster.jpg">
+					<div class = "bareaster">
+						<div class="col-sm-4 col-md-5">
+							<div class = "pictureAbout">
+							<img src="static/bareaster.jpg">
+							</div>
+						</div>
+					</div>
+			<div class="col-sm-6 col-md-12">
+				<div class = "whereMeet">
+					<h4>Where we meet - 1316 Geddes Ave. Apartment 20 every Wednesday at 7 pm</h4>
+						    <div id="googleMap">
+						    </div>
+				</div>
+				<div class="col-sm-6 col-md-12">
+					<div class = "verse"><p>But even if I am being poured out like a drink offering on the sacrifice and service coming from your faith, I am glad and rejoice with all of you. So you too should be glad and rejoice with me. Phillipians 2.17-18</p></div>
+				</div>
+				<div class = "footer">
+					<p>Copyright &copy; Jason Qin from University of Michigan<a href="http://umich.edu">University of Michigan</a>.</p>
+				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class = "verse"><p>But even if I am being poured out like a drink offering on the sacrifice and service coming from your faith, I am glad and rejoice with all of you. So you too should be glad and rejoice with me. Phillipians 2.17-18</p></div>
-
-	<div class = "footer">
-		<p>Copyright &copy; Jason Qin from University of Michigan<a href="http://umich.edu">University of Michigan</a>.</p>
 	</div>
 </body>
 </html>
