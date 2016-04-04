@@ -2,44 +2,44 @@
 <html lang="en">
 <head>
 	<meta name = 'viewport' content='width=device-width, initial-scale=1'>
-<title>Portfolio</title>
-<meta charset = "UTF-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>Portfolio</title>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="static/portfolio.css"/>
-<script src="js/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-//javascript for maps
-var myCenter=new google.maps.LatLng(42.277406, -83.732550);
+	<script src="js/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	//javascript for maps
+	var myCenter=new google.maps.LatLng(42.277406, -83.732550);
 
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
+	function initialize()
+	{
+	var mapProp = {
+	  center:myCenter,
+	  zoom:12,
+	  mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
 
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-var marker=new google.maps.Marker({
-  position:myCenter,
-  });
+	var marker=new google.maps.Marker({
+	  position:myCenter,
+	  });
 
-marker.setMap(map);
-}
+	marker.setMap(map);
+	}
 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 </head>
 <body>
 	<div class = "header">
 			<ul class = "nav nav-pills nav-justified">
-			<li ><a href = "index.html">home</a></li>
-			<li class = "active"><a href = "aboutus.html">about us</a></li>
-			<li ><a href = "gallery.html">gallery</a></li>
-			<li ><a href = "join.html">interested?</a></li>
+				<li ><a href = "index.html">home</a></li>
+				<li class = "active"><a href = "aboutus.html">about us</a></li>
+				<li ><a href = "gallery.html">gallery</a></li>
+				<li ><a href = "join.html">interested?</a></li>
 			</ul>
 	</div>
 	<div class = "main">
@@ -51,12 +51,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					<div class = "bareaster">
 						<div class="col-sm-4 col-md-12">
 							<div class = "pictureAbout">
-							<img src="static/bareaster.jpg">
+								<img src="static/bareaster.jpg">
 							</div>
 							<div class = "pictureAbout">
 								<img src="static/hgames.jpg">
+							</div>
 						</div>
-					</div>
 					</div>
 
 			<div class="col-sm-12 col-md-12">
@@ -66,11 +66,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			<div class="col-sm-6 col-md-12">
 				<div class = "whereMeet">
 					<h4>Where we meet - 1316 Geddes Ave. Apartment 20 every Wednesday at 7 pm</h4>
-						    <div id="googleMap">
-						    </div>
+					    <div id="googleMap">
+					    </div>
 				</div>
 				<div class="col-sm-6 col-md-12">
-					<div class = "verse"><p>But even if I am being poured out like a drink offering on the sacrifice and service coming from your faith, I am glad and rejoice with all of you. So you too should be glad and rejoice with me. Phillipians 2.17-18</p></div>
+					<div class = "verse">
+						<p>But even if I am being poured out like a drink offering on the sacrifice and service coming from your faith, I am glad and rejoice with all of you. So you too should be glad and rejoice with me. Phillipians 2.17-18</p>
+					</div>
 				</div>
 				<div class = "footer">
 					<p>Copyright &copy; Jason Qin from University of Michigan<a href="http://umich.edu">University of Michigan</a>.</p>
