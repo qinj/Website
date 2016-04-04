@@ -80,13 +80,13 @@ img:hover {
 .aboutus h3 {
 	font-size: 50px;
 	padding-bottom: 0px;
-	padding-left: 20%;
+	padding-left: 10%;
 	color: black;
 }
 .aboutus p{
 	font-size: 15px;
 	padding-bottom: 0px;
-	padding-left: 20%;
+	padding-left: 10%;
 	color: #808080;
 	margin-bottom: 10px;
 }
@@ -163,6 +163,48 @@ img:hover {
 	text-align: center;
 	text-decoration: none;
 	border-color: #C0C0C0;
+}
+
+.nameFade h1 {
+	font-size: 80px;
+	padding-top: 11%;
+	padding-bottom: 0px;
+	padding-left: 20%;
+	color: #ffffff;
+}
+
+.join h3{
+	font-size: 80px;
+	padding-top: 11%;
+	padding-bottom: 0px;
+	padding-left: 20%;
+	color: #ffffff;
+}
+.bumble {
+	position: relative;
+	background: url("photoshoot/13.jpg") center center;
+	height: 625px;
+	margin-bottom: 0px;
+}
+
+.bumble>a:hover {
+	text-decoration: underline;
+	color: #D3D3D3;
+	background-color: white;
+}
+
+
+.contact h3{
+	padding-left: 1%;
+}
+.contact img{
+	margin-left: auto;
+	margin-right: auto;
+	max-width:10%;
+}
+.contact img.center {
+    display: block;
+    margin: 0 auto;
 }
 
 .footer p{
